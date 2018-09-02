@@ -18,7 +18,7 @@ public class SumToNumberTest {
 	@Test
 	public void sumTwoNo_false_result() {
 		System.out.println("===================return false================================");
-		assertEquals(38, sum.sumTowNo(10,20));
+		assertNotEquals(30, sum.sumTowNo(10,21));
 	}
 	
 	

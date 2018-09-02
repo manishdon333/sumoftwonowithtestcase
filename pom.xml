@@ -13,22 +13,10 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>sum</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -38,18 +26,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-	<repositories>
-        <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/JHll3Ck47w0BgNMpg6gb/</url>
-        </repository>
-    </repositories>
 
-    <distributionManagement>
-        <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/ELQz1ReO8o8HtJdqsql2/</url>
-        </repository>
-    </distributionManagement>
+	<repositories>
+		<repository>
+			<id>myMavenRepo.read</id>
+			<url>https://mymavenrepo.com/repo/JHll3Ck47w0BgNMpg6gb/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>myMavenRepo.write</id>
+			<url>https://mymavenrepo.com/repo/ELQz1ReO8o8HtJdqsql2/</url>
+		</repository>
+	</distributionManagement>
 </project>
